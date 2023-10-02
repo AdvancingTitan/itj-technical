@@ -6,7 +6,7 @@ function whereAreThey(nums){
     const uniqueValues = new Set(nums); //Sets ensure only unique values are saved
     let missingNums = [];
 
-    for (let i = 1; i < nums.length; i++){
+    for (let i = 1; i <= nums.length; i++){
         if (!uniqueValues.has(i)){ //If the number is not in the set, add it to the answer list
             missingNums.push(i);
         }
